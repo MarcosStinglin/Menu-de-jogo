@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smmide</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="./imagens/s.ico" />
+</head>
+<body>
+    <div class="botoes">
+        <img src="./imagens/Vector.png" width="350px">
+
+        <div class="separar">
+        <ul>
+            <li><a href="#"><button>Jogar</button></a></li>
+            <li><a href="#" ><button>Regras</button></a></li>
+            <li><a href="#" ><button>Configurações</button></a></li>
+            <li><a href="#" ><button>Créditos</button></a></li>
+        </ul>
+        </div><!--separar-->
+    </div><!--botoes-->
+    <div class="cartas">
+        <div class="container">
+            <div class="card">
+                <div class="conteudo">
+                    <div class="card1">
+                        <img src="./imagens/carta.png" width="100%">
+                    </div><!--card1-->
+                </div><!--conteudo-->
+            </div><!--card-->
+    
+            <div class="card">
+                <div class="conteudo">
+                    <div class="card2">
+                        <img src="./imagens/carta.png" width="100%">
+                    </div><!--card2-->
+                </div><!--conteudo-->
+            </div><!--card-->
+    
+            <div class="card">
+                <div class="conteudo">
+                    <div class="card3">
+                        <img src="./imagens/carta.png" width="100%">
+                    </div><!--card3-->
+                </div><!--conteudo-->
+            </div><!--card-->
+        </div><!--container-->
+    </div><!--cartas-->
+</body>
+</html>
+
+
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script>
+    VanillaTilt.init(document.querySelectorAll(".card", {
+    max: 25,
+    speed: 400,
+    glare: true,
+    "max-glare": 1
+}));
+</script>
